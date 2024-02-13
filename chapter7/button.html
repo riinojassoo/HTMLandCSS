@@ -16,6 +16,60 @@
         <input type="checkbox" name="service" value="itunes" checked="checked"> iTunes
         <input type="checkbox" name="service" value="lastfm"> Last.fm
         <input type="checkbox" name="service" value="spotify"> spotify
+
+        <p>What device do you listen to music on?</p>
+        <select name="devices">
+            <option value="mobilePhone">Mobile Phone</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+
+        <p>Upload your song in somekind of file format</p>
+        <input type="file" name="userSong" /><br />
+        <input type="submit" value="Upload" />
+
+        <fieldset>
+            <legend>Contact details</legend>
+            <label> Email: <br /><input type="text" name="email"></label><br />
+            <label> Mobile: <br /><input type="text" name="mobile"></label><br />
+            <label> Telephone: <br /><input type="text" name="telephone"></label><br />
+        </fieldset>
+
+        <label for="username">Departure date:</label>
+        <input type="date" name="depart">
+        <input type="submit" value="Submit">
+        <br>
+        <hr>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required="required" /><br />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required="required">
+        <input type="submit" value="Submit">
+        <br>
+        <hr>
+        <p>Subscribe to your email list:</p>
+        <input type="text" name="email" />
+        <input type="image" src="images/subscribe.jpg" width="100" height="20" />
+
+        <label>Age: <input type="text" name="age" /></label>
+        <br />
+        Gender:
+        <input id="female" type="radio" name="gender" value="f">
+        <label for="female">Female</label>
+        <input id="male" type="radio" name="gender" value="m">
+        <label for="male">Male</label>
+
+        <p>Instruments</p>
+        <select name="Instruments" size="3" multiple="multiple">
+            <option value="guitar" selected="selected">Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="bass">Bass</option>
+        </select>
+        <p>Username:
+            <input type="text" name="username" size="5" maxlength="30" />
+        </p>
+        <textarea name="comments" cols="20" rows="4">Enter your comments...</textarea>
     </form>
 </body>
 </html>
