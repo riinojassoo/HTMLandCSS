@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliptical Shapes</title>
+    <style>
+        p {
+            border: 5px solid #ee3e80;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 20px;
+        }
+        p.one {
+            border-top-left-radius: 80px 50px;
+            /* -moz-border-top-left-radius: 80px 50px;   kui ülemine ei tööta     } */
+            box-shadow: -15px -15px #777777;
+        }
+        p.two {
+            border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+            border-color: #bbbaaa #111111 #ee3e80 #0088dd;
+            box-shadow: 15px 15px 15px #777777;
+        }
+        p.three {
+            padding: 0px;
+            border-radius: 100px;
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            box-shadow: 0 0 10px #777777;
+        }
+        p.four {
+            border-image: url("images/dots.gif") 11 11 11 11 stretch;
+        }
+        p.five {
+            border-image: url(images/dots.gif) 11 11 11 11 round;
+        }
+        div{
+            min-height: 30px;
+            max-height: 50px;
+            width: 200px;
+        }
+        div.six {
+            overflow: hidden;
+        }
+        div.seven {
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <p class="one"></p>
+    <p class="two"></p>
+    <p class="three"></p>
+    <p class="four">Asd</p>
+    <p class="five">Asd</p>
+    <div class="six">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Aliquid repellendus aliquam quis, quam vero quas eveniet 
+        repudiandae voluptate, odit harum amet a quae ipsa explicabo 
+        nihil aperiam sit itaque praesentium!
+    </div>
+    <hr />
+    <div class="seven">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Inventore perferendis voluptatibus, officia fuga consectetur 
+        eos veniam! Obcaecati consectetur quis nobis corrupti laboriosam 
+        hic omnis nam assumenda pariatur, nisi iste cupiditate?
+    </div>
+</body>
+</html>
